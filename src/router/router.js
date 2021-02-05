@@ -6,6 +6,8 @@ import SearchContainer from '../views/tabbar_search.vue'
 import VipContainer from '../views/tabbar_vip.vue'
 import NewsList from '../views/news_newsList.vue'
 import NewsInfo from '../views/news_newsInfo.vue'
+import PhotoList from '../views/photo_list.vue';
+import GoodsList from '../views/goods_list.vue'
 
 Vue.use(VueRouter)
 
@@ -16,7 +18,9 @@ const routes = [
   { path: '/cart', name: 'Cart', component: CartContainer },
   { path: '/search', name: 'Search', component: SearchContainer },
   { path: '/home/newslist', name: 'NewsList', component: NewsList },
-  { path: '/home/newsinfo/:id', name: 'NewsInfo', component: NewsInfo, props: true}
+  { path: '/home/newsinfo/:id', name: 'NewsInfo', component: NewsInfo, props: true},
+  { path: '/home/photolist', name: 'PhotoList', component: PhotoList },
+  { path: '/home/goodslist', name: 'GoodsList', component: GoodsList },
 ]
 
 const router = new VueRouter({

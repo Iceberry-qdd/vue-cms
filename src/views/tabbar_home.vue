@@ -9,8 +9,8 @@
     <!-- 九宫格 -->
     <van-grid :column-num="3" square clickable :border="false">
         <van-grid-item icon="newspaper-o" text="新闻资讯" to="/home/newslist" />
-        <van-grid-item icon="photo-o" text="图片分享" />
-        <van-grid-item icon="cart-circle-o" text="商品购买" />
+        <van-grid-item icon="photo-o" text="图片分享" to="/home/photolist"/>
+        <van-grid-item icon="cart-circle-o" text="商品购买" tp="/home/goodslist" />
         <van-grid-item icon="comment-o" text="留言反馈" />
         <van-grid-item icon="video-o" text="视频专区" />
         <van-grid-item icon="friends-o" text="联系我们" />
